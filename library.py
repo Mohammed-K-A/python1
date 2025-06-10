@@ -62,7 +62,9 @@ while True:
     elif option==2:
        while True: 
         print("1.Registration")        
-        print("2.Login")        
+        print("2.Login")  
+        print("3.Exit")   
+
             
         option=int(input("Enter the choice:"))
         if option==1:
@@ -117,6 +119,10 @@ while True:
                         break
             else:
                 print("User not found")
+        
+        elif option==3:
+            print("Exited")
+            break
 
     else:
         print("Invalid Credentials")
