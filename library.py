@@ -5,7 +5,8 @@ book = {}
 while True:
     print("1.Admin")
     print("2.User")
-    option=int(input("Choose 1 or 2:"))
+    print("3.Exit")
+    option=int(input("Choose an option:"))
 
     if option==1:
         a_name=input("Enter the username:")
@@ -124,6 +125,9 @@ while True:
             print("Exited")
             break
 
+    elif option==3:
+        print("Exited from Library")
+        break
     else:
         print("Invalid Credentials")
                         
