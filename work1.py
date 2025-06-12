@@ -82,49 +82,55 @@
 
 #7 . Create a menu-driven program using functions:
 
-def add(x,y):
-    return x+y
-def sub(x,y):
-    return x-y
-def mul(x,y):
-    return x*y
-def div(x,y):
-    if y!=0:
-        return x/y
-    else:
-        print("Cannot divide by 0!")
+# def add(x,y):
+#     return x+y
+# def sub(x,y):
+#     return x-y
+# def mul(x,y):
+#     return x*y
+# def div(x,y):
+#     if y!=0:
+#         return x/y
+#     else:
+#         print("Cannot divide by 0!")
 
-def home():
-    while True:
-        print("\nMENU:")
-        print("1.ADD")
-        print("2.SUBTRACT")
-        print("3.MULTIPLY")
-        print("4.DIVIDE")
-        print("5.EXIT")
+# def home():
+#     while True:
+#         print("\nMENU:")
+#         print("1.ADD")
+#         print("2.SUBTRACT")
+#         print("3.MULTIPLY")
+#         print("4.DIVIDE")
+#         print("5.EXIT")
 
-        choice=int(input("Enter your choice:"))
+#         choice=int(input("Enter your choice:"))
 
-        if choice == 5:
-            print("Exited!")
-            break
+#         if choice == 5:
+#             print("Exited!")
+#             break
 
-        a=int(input("Enter 1st number:"))
-        b=int(input("Enter 2nd number:"))
+#         a=int(input("Enter 1st number:"))
+#         b=int(input("Enter 2nd number:"))
 
-        if choice == 1:
-            print("Answer:",add(a,b))
+#         if choice == 1:
+#             print("Answer:",add(a,b))
 
-        elif choice == 2:
-            print("Answer:",sub(a,b))
+#         elif choice == 2:
+#             print("Answer:",sub(a,b))
 
-        elif choice == 3:
-            print("Answer:",mul(a,b))
+#         elif choice == 3:
+#             print("Answer:",mul(a,b))
 
-        elif choice == 4:
-            print("Answer:",div(a,b))
+#         elif choice == 4:
+#             print("Answer:",div(a,b))
 
-        else:
-            print("Invalid choice")
+#         else:
+#             print("Invalid choice")
 
-home()
+# home()
+
+
+
+
+#  <<<<<<<<<<<<<<<<<<<<<<<<  homework   >>>>>>>>>>>>>>>>>>>>>>>>>>
+
