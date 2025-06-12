@@ -1,0 +1,130 @@
+# <<<<<<<<<<<<<<  classwork  >>>>>>>>>>>>>>>>>>>
+
+# 1 . Write a function that takes a list of numbers and returns the maximum.
+
+# def num():
+#     a=[2,1,4,7,5,6,3]
+#     max=0
+#     for i in a:
+#         if i>max:
+#             max=i
+#     print(max)
+# num()
+
+
+
+# 2 . Define a function that returns the reverse of a given string.
+
+# def str():
+#     a=input("Enter a string:")
+#     rev=""
+#     for i in a:
+#         rev=i+rev
+#     print(rev)
+# str()
+
+
+# 3 . Write a function that takes a string and counts the number of vowels.
+
+# def vow():
+#     a=input("Enter a character:")
+#     count=0
+#     for i in a:
+#         if i in['a','i','o','e','u','A','E','I','O','U']:
+#             count=count+1
+#     print(count)
+# vow()
+
+
+
+# 4 . Create a function to check if a number is a palindrome.
+
+# def pal():
+#     num=int(input("Enter a number:"))
+#     orginal=num
+#     rev=0
+#     while num>0:
+#         rev=rev*10 + num%10
+#         num=num//10
+#     if orginal==rev:
+#         print("The number is palindrome")
+#     else:
+#         print("The number is not palindrome")
+# pal()
+
+
+
+# 5 . Define a function that accepts a list and returns a new list with only even numbers.
+
+# def even_no():
+#     n=int(input("Enter a number : "))
+#     even_list=[]
+#     for i in range(1,n+1):
+#         if (i % 2 == 0):
+#             even_list.append(i)
+#     print(even_list) 
+# even_no()
+
+
+
+# 6 . Write a function that calculates the power of a number (without using ** or pow).
+
+# def power(num, power):
+#     ans = 1
+#     for i in range(power):
+#         ans = ans * num
+#     print("power:", ans)
+# a=int(input("Enter number : "))
+# b=int(input("Enter power : "))
+# power(a,b)
+
+
+
+#7 . Create a menu-driven program using functions:
+
+def add(x,y):
+    return x+y
+def sub(x,y):
+    return x-y
+def mul(x,y):
+    return x*y
+def div(x,y):
+    if y!=0:
+        return x/y
+    else:
+        print("Cannot divide by 0!")
+
+def home():
+    while True:
+        print("\nMENU:")
+        print("1.ADD")
+        print("2.SUBTRACT")
+        print("3.MULTIPLY")
+        print("4.DIVIDE")
+        print("5.EXIT")
+
+        choice=int(input("Enter your choice:"))
+
+        if choice == 5:
+            print("Exited!")
+            break
+
+        a=int(input("Enter 1st number:"))
+        b=int(input("Enter 2nd number:"))
+
+        if choice == 1:
+            print("Answer:",add(a,b))
+
+        elif choice == 2:
+            print("Answer:",sub(a,b))
+
+        elif choice == 3:
+            print("Answer:",mul(a,b))
+
+        elif choice == 4:
+            print("Answer:",div(a,b))
+
+        else:
+            print("Invalid choice")
+
+home()

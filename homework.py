@@ -94,7 +94,7 @@
 # Q10. Write a function that prints your name.
 
 # def name():
-#     print("Mohammed")
+#     print("Mohammed😎")
 # name()
 
 # Q11. Write a function that prints numbers from 1 to 10.
