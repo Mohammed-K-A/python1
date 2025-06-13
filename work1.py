@@ -134,3 +134,25 @@
 
 #  <<<<<<<<<<<<<<<<<<<<<<<<  homework   >>>>>>>>>>>>>>>>>>>>>>>>>>
 
+
+# <<<<<<<<<<< recursive fns >>>>>>>>>>>>>>>>>
+
+# 1 . Write a recursive function to print numbers from n to 1.
+
+# def print_no(n):
+#     if n != 0:   
+#         print(n)
+#         print_no(n - 1)
+# no=int(input("Enter a number:"))
+# print_no(no)
+
+
+# 2 . Write a recursive function to calculate the sum of first n natural numbers.
+
+def sum_no(n):
+    if n != 0:
+        return n + sum_no(n - 1)
+    else:
+        return 0
+no = int(input("Enter a number: "))
+print("Sum =", sum_no(no))

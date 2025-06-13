@@ -79,3 +79,31 @@
 #         a=i*j
 #         print(f"{i}*{j}={i*j}", end="\t")
 #     print()
+
+
+
+
+# Task 15
+
+# my_fav_food=['Mandi','Biriyani','Fried Chicken','Porotta','Masala Dosa']
+# for i in my_fav_food:
+#     print(f"I love eating {i}")
+
+
+# Task 16
+
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# square = [x ** 2 for x in numbers]
+# print("square of numbers = ",square)
+
+
+
+# text = 'Python Programming is fun!'
+# vowels = 'aeiouAEIOU'
+# vowel_list = [char for char in text if char in vowels]
+# print("Extracted vowels are : ",vowel_list)
+
+
+# no = list(range(1, 21))
+# even_num = [i for i in no if i % 2 == 0]
+# print("Even numbers = ",even_num)

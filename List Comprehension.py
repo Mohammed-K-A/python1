@@ -1,6 +1,6 @@
-# numbers = [1, 2, 3, 4, 5]
-# a = [x ** 2 for x in numbers]
-# print(a)
+numbers = [1, 2, 3, 4, 5]
+a = [x ** 2 for x in numbers]
+print(a)
 
 
 
@@ -33,5 +33,5 @@
 
 # Nested list comprehension :
 
-matrix = [[j for j in range(5)] for i in range(3)] 
-print(matrix)
+# matrix = [[j for j in range(5)] for i in range(3)] 
+# print(matrix)
