@@ -149,10 +149,43 @@
 
 # 2 . Write a recursive function to calculate the sum of first n natural numbers.
 
-def sum_no(n):
-    if n != 0:
-        return n + sum_no(n - 1)
-    else:
-        return 0
-no = int(input("Enter a number: "))
-print("Sum =", sum_no(no))
+# def sum_no(n):
+#     if n != 0:
+#         return n + sum_no(n - 1)
+#     else:
+#         return 0
+# no = int(input("Enter a number: "))
+# print("Sum =", sum_no(no))
+
+
+#3 . Write a recursive function to find the sum of digits of a number.
+
+# def sum_dig(num):
+#     if num!=0:
+#         return num % 10 + sum_dig(num // 10)
+#     else:
+#         return 0
+# sum = int(input("Enter a number: "))
+# print("Sum of digits :", sum_dig(sum))
+
+
+#4. Write a recursive function to reverse a string.
+
+# def reverse(string):
+#     if len(string) == 0:
+#         return string
+#     return reverse(string[1:]) + string[0]
+
+# text = input("Enter a string: ")
+# print("Reverse of the string:", reverse(text))
+
+
+
+# <<<<<<<<<<<<<<<<<  lambda fns  >>>>>>>>>>>>>>>>>>>>>>>
+
+
+#1 . Write a lambda function to find the square of a number.
+
+# square=lambda num1: num1**2
+# num=int(input("Enter a number:"))
+# print("The square of number is:",square(num))
