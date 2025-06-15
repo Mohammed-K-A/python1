@@ -189,3 +189,26 @@
 # square=lambda num1: num1**2
 # num=int(input("Enter a number:"))
 # print("The square of number is:",square(num))
+
+
+#2 . Write a lambda function to check if a number is even or odd.
+
+# even = lambda n: "Even" if n % 2 == 0 else "Odd"
+# num = int(input("Enter a number: "))
+# print("The number",num,"is", even(num))
+
+
+#3 . Write a lambda function to find the maximum of two numbers.
+
+# max = lambda num1,num2: num1 if num1>num2 else num2
+# num1 = int(input("Enter 1st number: "))
+# num2 = int(input("Enter 2nd number: "))
+# print("The greater number is:", max(num1,num2))
+
+
+# 4 . Write a lambda function to check if a string starts with the letter 'A
+
+# txt = lambda str: "True" if str[0]=='A' or str[0]=='a' else "False"
+# a=input("Enter a string: ")
+# print("It is", txt(a),"that the string starts with the letter A or a")
+
