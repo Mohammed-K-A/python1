@@ -107,3 +107,64 @@
 # no = list(range(1, 21))
 # even_num = [i for i in no if i % 2 == 0]
 # print("Even numbers = ",even_num)
+
+
+
+
+# Task 17
+
+# char = "Hello"
+# print(char[0], char[-1]) 
+
+
+# text= "Hello"
+# reversed_text = text[::-1] 
+# print(reversed_text)
+
+
+# text = "Hello"
+# print(text.count("l"))
+
+
+# txt = "How are you?" 
+# print(txt.replace(" ", "_"))
+
+
+# pal_word = "malayalam" 
+# print(pal_word == pal_word[::-1])
+
+
+
+
+# Task 19
+
+# days_of_week=('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday')
+# print("First day: ",days_of_week[0])
+# print("Second day: ",days_of_week[1])
+# print("Third day: ",days_of_week[2])
+# print("Slicing : ",days_of_week[3:6])
+# print("Index of Wednesday : ",days_of_week.index('Wednesday'))
+
+
+
+# student_name = ["Mohammed", "Rashid", "Fahad", "Mohammed", "Sultan", "Rashid"]
+# unique_students = set(student_name)
+# print("Unique Students:", unique_students)
+
+
+# set1={3,6,1,7,11,15,24,36,77,100,2}
+# set2={4,6,3,100,36,71,54}
+
+
+# print("Union:", set1 | set2)
+
+
+# print("Intersection:", set1 & set2)
+
+
+# print("Difference (set 1 - set 2):", set1 - set2)
+
+
+# is_subset = set2.issubset(set1)
+# print("Is set 2 a subset of set 1?", is_subset)
+
