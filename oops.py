@@ -83,6 +83,13 @@
 
 
 
+
+# 6. Encapsulation
+
+# Encapsulation is one of the core concepts in Object-Oriented Programming (OOP). 
+# It refers to binding data (variables) and code (methods) together, and restricting direct access to some of the object’s components. This helps protect the data from unwanted changes and keeps it secure.
+
+
 #  Why Use OOP?
 
 # - Keeps code clean and organized
