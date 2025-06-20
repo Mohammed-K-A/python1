@@ -97,30 +97,35 @@
 
 # munnathe ethenkilum 2 inheritance koodi chernnathaan hybrid inheritance
 
-# class Parent
+# class Hotel:
+#     def shop(self):
+#         print("The Hotel has variety of food.")
+# class Porotta(Hotel):
+#     def taste(self):
+#         print("Porotta tastes good.")
+# class Biriyani(Hotel):
+#     def smell(self):
+#         print("Biriyani smells good.")
+# class Food(Porotta,Biriyani):
+#     def color(self):
+#         print("Food are served in the hotel.")
+
+# t=Porotta()
+# t.shop()
+# t.taste()
+
+# s=Biriyani()
+# s.shop()
+# s.smell()
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# h=Food()
+# h.shop()
+# h.taste()
+# h.smell()
+# h.color()
 
 
 # .....................................................................................................................
@@ -159,25 +164,84 @@
 
 
 
-class Bird:
-    def intro(self):
-        print("There are many types of birds")
-    def flight(self):
-        print("Most of the birds can fly but some cannot")
-class Sparrow(Bird):
-    def flight(self):
-        print("Sparrow can fly")
-class Ostrich(Bird):
-    def flight(self):
-        print("Ostriches cannot fly")
+# class Bird:
+#     def intro(self):
+#         print("There are many types of birds")
+#     def flight(self):
+#         print("Most of the birds can fly but some cannot")
+# class Sparrow(Bird):
+#     def flight(self):
+#         print("Sparrow can fly")
+# class Ostrich(Bird):
+#     def flight(self):
+#         print("Ostriches cannot fly")
 
-bird1=Bird()
-bird2=Sparrow()
-bird3=Ostrich()
+# bird1=Bird()
+# bird2=Sparrow()
+# bird3=Ostrich()
 
-bird1.intro()
-bird1.flight()
-bird2.intro()
-bird2.flight()
-bird3.intro()
-bird3.flight()
+# bird1.intro()
+# bird1.flight()
+# bird2.intro()
+# bird2.flight()
+# bird3.intro()
+# bird3.flight()
+
+
+
+
+
+
+
+# ............................................................................................
+# Protected members
+
+# class Base: 
+# 	def __init__(self): 
+# 		# Protected member 
+# 		self._a = 2
+# # Creating a derived class 
+# class Derived(Base): 
+# 	def __init__(self): 
+# 		# Calling constructor of 
+# 		# Base class 
+# 		Base.__init__(self) 
+# 		print("Calling protected member of base class: ", self._a) 
+# 		# Modify the protected variable: 
+# 		self._a = 3
+# 		print("Calling modified protected member outside class: ", self._a) 
+# obj1 = Derived() 
+
+# obj2 = Base() 
+
+# # Calling protected member 
+# # Can be accessed but should not be done due to convention 
+# print("Accessing protected member of obj1: ", obj1._a) 
+
+# # Accessing the protected variable outside 
+# print("Accessing protected member of obj2: ", obj2._a) 
+
+
+
+# Private members
+
+class Base: 
+    def __init__(self):
+        self.a = "Hello"
+        self.__c = "World"
+
+# Creating a derived class 
+class Derived(Base): 
+    def __init__(self): 
+
+# Calling constructor of Base class 
+        Base.__init__(self) 
+        print("Calling private member of base class: ") 
+        print(self.__c) 
+obj1 = Base() 
+print(obj1.a)
+
+# Uncommenting print(obj1.c) will raise an AttributeError 
+# Uncommenting obj2 = Derived() will also raise an AttributeError as private member of base class is called inside derived class 
+
+
