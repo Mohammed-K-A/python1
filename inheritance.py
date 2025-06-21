@@ -194,6 +194,11 @@
 
 
 # ............................................................................................
+
+
+# ENCAPSULATION..........................
+
+
 # Protected members
 
 # class Base: 
@@ -225,23 +230,54 @@
 
 # Private members
 
-class Base: 
-    def __init__(self):
-        self.a = "Hello"
-        self.__c = "World"
+# to define a private member prefix the member name with double underscore “__”.
 
-# Creating a derived class 
-class Derived(Base): 
-    def __init__(self): 
 
-# Calling constructor of Base class 
-        Base.__init__(self) 
-        print("Calling private member of base class: ") 
-        print(self.__c) 
-obj1 = Base() 
-print(obj1.a)
+# class Base: 
+#     def __init__(self):
+#         self.a = "Hello"
+#         self.__c = "World"
+
+# # Creating a derived class 
+# class Derived(Base): 
+#     def __init__(self): 
+
+# # Calling constructor of Base class 
+#         Base.__init__(self) 
+#         print("Calling private member of base class: ") 
+#         print(self.__c) 
+# obj1 = Base() 
+# print(obj1.a)
+# obj2 = Derived()
 
 # Uncommenting print(obj1.c) will raise an AttributeError 
 # Uncommenting obj2 = Derived() will also raise an AttributeError as private member of base class is called inside derived class 
 
 
+
+
+
+
+# ...........................................................................................
+# Data Abstraction
+
+from abc import ABC,abstractmethod
+class Animal(ABC):                     #Abstract class
+    @abstractmethod
+    def make_sound(self):
+        pass                          #Abstract method
+
+class Dog(Animal):                    #Concrete class
+    def make_sound(self):
+        return "Woof!"
+    
+class Cat(Animal):                    #Concrete class
+    def make_sound(self):
+        return "Meow!"
+
+# Client code
+dog=Dog()
+cat=Cat()
+
+print(dog.make_sound())      #Output:Woof!
+print(cat.make_sound())      #Output:Meow!
