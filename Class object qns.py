@@ -68,31 +68,83 @@
 
 #5 . Create a class BankAccount with attributes account_holder and balance.Add methods to deposit, withdraw, and check balance.      
 
-class BankAccount:
-    def __init__(self,account_holder,balance):
-        self.account_holder=account_holder
-        self.balance=balance
-        print("Account holder =",self.account_holder) 
+# class BankAccount:
+#     def __init__(self,account_holder,balance):
+#         self.account_holder=account_holder
+#         self.balance=balance
+#         print("Account holder =",self.account_holder) 
     
-    def Deposit(self,amount):
-        if amount>0:
-            self.balance = self.balance + amount 
-            print(amount,"deposited." "\n"  "Balance =" ,self.balance)
-        else:
-            print("Cannot Deposit")     
+#     def Deposit(self,amount):
+#         if amount>0:
+#             self.balance = self.balance + amount 
+#             print(amount,"deposited." "\n"  "Balance =" ,self.balance)
+#         else:
+#             print("Cannot Deposit")     
 
-    def Withdraw(self,amount):
-        if amount<self.balance:
-            self.balance = self.balance - amount
-            print(amount, "withdrawn."  "\n"  "Balance =", self.balance) 
+#     def Withdraw(self,amount):
+#         if amount<self.balance:
+#             self.balance = self.balance - amount
+#             print(amount, "withdrawn."  "\n"  "Balance =", self.balance) 
+#         else:
+#             print("Insufficient balance.")
+        
+#     def Check_balance(self):
+#         print("Current balance =",self.balance) 
+
+# bank1=BankAccount("Mohammed",0)      
+# bank1.Deposit(7000)
+# bank1.Withdraw(5000) 
+# bank1.Check_balance()
+
+
+
+
+
+#5 . Create a class BankAccount with attributes account_holder and balance.Add methods to deposit, withdraw, and check balance. (using while True and input the amount)
+
+class BankAccount:
+    def __init__(self, account_holder, balance):
+        self.account_holder = account_holder
+        self.balance = balance
+        print("Account created for:", self.account_holder)
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.balance += amount
+            print(amount, "deposited.")
+        else:
+            print("Deposit amount must be positive.")
+
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance -= amount
+            print(amount, "withdrawn.")
         else:
             print("Insufficient balance.")
-        
-    def Check_balance(self):
-        print("Current balance =",self.balance) 
 
-bank1=BankAccount("Mohammed",0)      
-bank1.Deposit(7000)
-bank1.Withdraw(5000) 
-bank1.Check_balance()
+    def check_balance(self):
+        print("Current balance:", self.balance)
+
+# Create account
+name = input("Enter account holder name: ")
+bank1 = BankAccount(name, 0)
+
+# Menu loop
+while True:
+    print("\nOptions:\n1. Deposit\n2. Withdraw\n3. Check Balance\n4. Exit")
+    choice = input("Enter your choice (1-4): ")
+
+    if choice == "1":
+        amt = float(input("Enter amount to deposit: "))
+        bank1.deposit(amt)
+    elif choice == "2":
+        amt = float(input("Enter amount to withdraw: "))
+        bank1.withdraw(amt)
+    elif choice == "3":
+        bank1.check_balance()
+    elif choice == "4":
+        print("Thank you for using the banking system.")
+        break
+    else:
+        print("Invalid choice. Please enter 1-4.")
         
