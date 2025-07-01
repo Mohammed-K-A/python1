@@ -83,6 +83,104 @@
 
 
 
+# Task 10
+
+# pswd="python123"
+# password= ""
+# while password !=pswd:
+#     password=input("Enter password : ")
+# else:
+#     print("Correct password.") 
+
+
+# Find a Number in the List
+
+# numbers=[1,2,3,4,5,6,7,8,9,10]
+# target=3
+
+# for i in numbers:
+#     if i==target:
+#         print("Number found!")
+#         break
+# else:
+#     print("Number not found!")
+
+
+# secret=24 
+# guess=2  
+# for i in range(guess):
+#     a=int(input("Guess the secret number: "))
+#     if a==secret:
+#         print("Congratulations!....You guessed the correct number.")
+#         break 
+# else:
+#     print("You failed to guess the number.") 
+
+
+
+
+# >.........................................................................tsk 11
+# Create a program to print a rectangle with 4 rows and 6 columns of stars.
+
+
+# for i in range(4):        
+#     for j in range(6):    
+#         print("*", end=" ")
+#     print()  
+
+# 
+
+# for i in range(5):
+#     for j in range(5):
+#         if i==0 or i==4 or j==0 or j==4:
+#             print("*", end=" ")
+#         else:
+#             print(" ", end=" ")
+#     print()
+
+
+# for i in range(5,0,-1):
+#     for j in range(1, i + 1):
+#         print(j,end=" ")
+#     print()
+
+
+
+# >................................................tks12
+
+# def calculate_total(price,tax=5):
+#     return price + (price*tax/100)
+# print(calculate_total(100))
+
+
+
+# items=["orange","cake"]
+# def add_item(item):
+#     global items  
+#     items.append(item)
+# add_item("apple")
+# print(items)
+
+
+
+# >>>>>>>>>>>>>>>......................................tsk 13
+
+# Recursive function to reverse a string
+
+# def reverse_string(s):
+#     if len(s)==0: 
+#         return s
+#     else:
+#         return reverse_string(s[1:]) + s[0] 
+# print(reverse_string("hello")) 
+
+
+
+# square=lambda x: x*x
+# print(square(7))
+
+
+
 # Task 15
 
 # my_fav_food=['Mandi','Biriyani','Fried Chicken','Porotta','Masala Dosa']
@@ -132,6 +230,22 @@
 
 # pal_word = "malayalam" 
 # print(pal_word == pal_word[::-1])
+
+
+
+
+# Task 18
+
+# names=["rashid","momi","sulu","fahad"]
+# grades=[85, 92, 78, 90]
+# s_grades=dict(zip(names, grades))
+# print(s_grades)
+
+
+# list1=[10,20,30,40]
+# list2=[1,2,3,4]
+# sum=[a + b for a, b in zip(list1, list2)]
+# print(sum)
 
 
 
