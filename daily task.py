@@ -282,3 +282,107 @@
 # is_subset = set2.issubset(set1)
 # print("Is set 2 a subset of set 1?", is_subset)
 
+
+
+# Task 20
+
+# original= [[4, 5], [6, 7]]
+# shallow_copy= original.copy()
+# original[0][1]= 15
+
+# print("Original List:", original)
+# print("Shallow Copy:", shallow_copy)
+
+
+
+
+# try:
+#     input= input("Enter a number: ")
+#     no= int(input)
+#     print("You entered the number:", no)
+
+# except ValueError:
+#     print("Invalid input!.... Please enter a valid number.")
+
+
+
+
+# Task 23
+
+
+# class Person:
+#     def __init__(self,name,age):
+#         self.name= name
+#         self.age= age
+
+# class Employee(Person):
+#     def __init__(self, name, age, employee_id):
+#         super().__init__(name, age)
+#         self.employee_id = employee_id
+
+#     def show_details(self):
+#         print("Name:", self.name)
+#         print("Age:", self.age)
+#         print("Employee ID:", self.employee_id)
+
+# emp = Employee("Momi",20,"Moham2004")
+# emp.show_details()
+
+
+
+
+
+# Task 29
+
+# from functools import reduce
+
+# num = [1, 2, 3, 4, 5]
+
+# double = list(map(lambda x: x * 2, num))
+# even = list(filter(lambda x: x % 2 == 0, double))
+# total = reduce(lambda x, y: x + y, even)
+
+# print(num)
+# print(double)
+# print(even)
+# print(total)
+
+
+
+
+# Task 25
+
+
+# 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 2
+
+# class Book: 
+#     count = 0 
+#     def __init__(self, title):
+#         self.title = title 
+#         Book.count += 1 
+    
+#     @classmethod 
+#     def total_books(cls): 
+#         return f"Total books created: {cls.count}" 
+    
+# book1 = Book("Python Basics") 
+# book2 = Book("Advanced Python") 
+# book3 = Book("Python MERN") 
+# book4 = Book("HTML") 
+# book5 = Book("JavaScript") 
+# print(Book.total_books())
